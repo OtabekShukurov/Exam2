@@ -50,6 +50,9 @@ a {
 .logo-link {
     width: 41px;
     height: 41px;
+}
+
+.nav-sets {
     margin-right: auto;
 }
 
@@ -188,6 +191,7 @@ a {
     line-height: 40px;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #FFFFFF;
     mix-blend-mode: normal;
 }
@@ -243,6 +247,7 @@ a {
     line-height: 40px;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #FFFFFF;
     mix-blend-mode: normal;
 }
@@ -370,6 +375,7 @@ a {
     line-height: 40px;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #FFFFFF;
     mix-blend-mode: normal;
 }
@@ -518,6 +524,13 @@ a {
 
 .three-lines {
     display: none;
+    width: 30px;
+}
+
+.guide-link, {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media(max-width:1160px){
@@ -575,8 +588,37 @@ a {
         width: 100%;
     }
 
+    .guide-link, .newway-link {
+        margin: 0 auto;
+    }
+
+    .newway, .stories {
+        margin: 0;
+    }
+
+    .guide {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .destinations {
+        padding: 50px 0;
+    }
+
     .newway-info, .guide-info {
         width: 100%;
+    }
+
+    .footer-item .logo-link {
+        display: none;
+    }
+
+    .footer-item:first-child {
+        margin-right: 0;
+    }
+
+    .footer-item {
+        text-align: center;
     }
 
     .newway-link {
@@ -643,11 +685,68 @@ a {
 }
 
 @media(max-width:660px){
-    .nav-sets, .nav-list, .nav-links  {
+    .nav-list, .nav-links, .footer-item .logo-link  {
         display: none;
+    }
+
+    .footer-item:first-child {
+        margin: 0;
     }
 
     .three-lines {
         display: block;
+    }
+
+    .nav-sets {
+        display: block;
+    }
+
+    .guide-link, .newway-link {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .finder-link {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .newway, .stories {
+        margin: 0;
+    }
+
+    .guide {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .destinations {
+        padding: 50px 0;
+    }
+
+    .stories-img {
+        border-radius: 8px;
+    }
+
+    .footer-text {
+        width: 80%
+    }
+}
+
+@media(max-width:560px){
+    .container {
+        width: 440px;
+    }
+}
+
+@media(max-width:560px){
+    .stories-item, .destination-item {
+        width: 50%;
+    }
+}
+
+@media(max-width:460px){
+    .container {
+        width: 90%;
     }
 }
